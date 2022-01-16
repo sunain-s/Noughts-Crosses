@@ -12,3 +12,10 @@ Noughts &amp; Crosses (Tic Tac Toe) made with Python3
 
 Coming Soon!
 
+# What I Learnt
+
+Coming Soon!
+
+# Improvements
+
+Coming Soon!
