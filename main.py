@@ -16,3 +16,11 @@ def input_move():
     if valid_move:
         grid[move] = 'O'
     return valid_move
+
+def check_move(move):
+    valid_move = False
+    if grid[move] == ' ':
+        valid_move = True
+    else:
+        print('Invalid move, choose elsewhere.')
+    return valid_move
