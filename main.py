@@ -47,3 +47,14 @@ def win_sum_calc(grid_num_format):
             sum += grid_num_format[pos]
         win_sums.append(sum)
     return win_sums
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# AI Possible Moves Functions
+
+def ai_random_move():
+    moved = False
+    while not moved:
+        pos = randint(0, 8)
+        if grid[pos] == ' ': 
+            grid[pos] = 'X'
+            moved = True
