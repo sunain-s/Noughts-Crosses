@@ -37,4 +37,13 @@ def cell_values():
             grid_num_format.append(1)
         elif cell == 'O':
             grid_num_format.append(-1)
-    return grid_num_format 
+    return grid_num_format        
+
+def win_sum_calc(grid_num_format):        
+    win_sums = []    
+    for win in WIN_CONDITIONS:
+        sum = 0
+        for pos in win:
+            sum += grid_num_format[pos]
+        win_sums.append(sum)
+    return win_sums
