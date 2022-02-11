@@ -68,3 +68,11 @@ def ai_winning_move(winning_row):
     for pos in winning_row:
         if grid[pos] == ' ':
             grid[pos] = 'X'
+
+def ai_side_mid_move():
+    moved = False
+    while not moved:
+        side_mid = random.choice([1, 3, 5, 7])
+        if grid[side_mid] == ' ':
+            grid[side_mid] = 'X'
+            moved = True
