@@ -58,3 +58,8 @@ def ai_random_move():
         if grid[pos] == ' ': 
             grid[pos] = 'X'
             moved = True
+
+def ai_block_win(losing_row):
+    for pos in losing_row:
+        if grid[pos] == ' ':
+            grid[pos] = 'X'
