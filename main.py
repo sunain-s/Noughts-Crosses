@@ -63,3 +63,8 @@ def ai_block_win(losing_row):
     for pos in losing_row:
         if grid[pos] == ' ':
             grid[pos] = 'X'
+
+def ai_winning_move(winning_row):
+    for pos in winning_row:
+        if grid[pos] == ' ':
+            grid[pos] = 'X'
