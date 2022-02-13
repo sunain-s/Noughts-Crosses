@@ -76,3 +76,11 @@ def ai_side_mid_move():
         if grid[side_mid] == ' ':
             grid[side_mid] = 'X'
             moved = True
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Master AI Move Select Function
+
+def ai_moves(win_sums):
+    if 2 in win_sums:
+        winning_row = WIN_CONDITIONS[win_sums.index(2)]
+        ai_winning_move(winning_row)
