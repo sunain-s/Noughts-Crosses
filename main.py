@@ -84,3 +84,7 @@ def ai_moves(win_sums):
     if 2 in win_sums:
         winning_row = WIN_CONDITIONS[win_sums.index(2)]
         ai_winning_move(winning_row)
+
+    elif -2 in win_sums:
+        losing_row = WIN_CONDITIONS[win_sums.index(-2)]
+        ai_block_win(losing_row)
