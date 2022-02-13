@@ -91,3 +91,8 @@ def ai_moves(win_sums):
 
     elif grid[4] == ' ':
         grid[4] = 'X'
+
+    elif grid[4] == 'O':
+        corner = random.choice([0, 2, 6, 8])
+        if grid[corner] == ' ':
+            grid[corner] = 'X'
