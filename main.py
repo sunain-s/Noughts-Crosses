@@ -88,3 +88,6 @@ def ai_moves(win_sums):
     elif -2 in win_sums:
         losing_row = WIN_CONDITIONS[win_sums.index(-2)]
         ai_block_win(losing_row)
+
+    elif grid[4] == ' ':
+        grid[4] = 'X'
