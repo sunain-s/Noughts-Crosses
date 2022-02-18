@@ -102,3 +102,15 @@ def ai_moves(win_sums):
 
     else:
         ai_random_move()
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Output + End Game Functions
+
+def check_win(win_sums):
+    for i in win_sums:
+        if i == -3:
+            print('\n\nNoughts win')
+            return True
+        if i == 3:
+            print('\n\nCrosses win')
+            return True
