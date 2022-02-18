@@ -96,3 +96,9 @@ def ai_moves(win_sums):
         corner = random.choice([0, 2, 6, 8])
         if grid[corner] == ' ':
             grid[corner] = 'X'
+        
+    elif (grid[0] == 'O' and grid[8] == 'O') or (grid[2] == 'O' and grid[6] == 'O'):
+        ai_side_mid_move() 
+
+    else:
+        ai_random_move()
