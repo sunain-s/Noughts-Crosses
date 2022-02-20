@@ -135,3 +135,15 @@ def output_grid():
                    |           |    
     '''
     )
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Main Function
+
+def main():
+    game_over = False
+    count = 0
+    while not game_over:
+
+        grid_num_format = cell_values()
+        win_sums = win_sum_calc(grid_num_format)
+        game_over = check_win(win_sums)
