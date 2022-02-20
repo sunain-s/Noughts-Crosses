@@ -114,3 +114,8 @@ def check_win(win_sums):
         if i == 3:
             print('\n\nCrosses win')
             return True
+
+    if ' ' not in grid:
+        print('\n\nDraw')
+        return True
+    return False
