@@ -119,3 +119,19 @@ def check_win(win_sums):
         print('\n\nDraw')
         return True
     return False
+
+def output_grid():
+    print(f'''
+                   |           |
+             {grid[0]}     |     {grid[1]}     |     {grid[2]}
+                   |           |
+        -----------------------------------
+                   |           |
+             {grid[3]}     |     {grid[4]}     |     {grid[5]}
+                   |           |
+        -----------------------------------
+                   |           |
+             {grid[6]}     |     {grid[7]}     |     {grid[8]}
+                   |           |    
+    '''
+    )
