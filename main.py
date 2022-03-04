@@ -147,3 +147,9 @@ def main():
         grid_num_format = cell_values()
         win_sums = win_sum_calc(grid_num_format)
         game_over = check_win(win_sums)
+
+        if not game_over:
+            if count > 1:
+                count = 0
+
+            
