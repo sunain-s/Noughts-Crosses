@@ -136,20 +136,15 @@ def output_grid():
     '''
     )
 
-# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Main Function
+if not count:
+                valid_move = input_move()
+                if valid_move:
+                    count += 1
 
-def main():
-    game_over = False
-    count = 0
-    while not game_over:
+            elif count:
+                ai_moves(win_sums)
+                print('\nAI turn...\n')
+                count += 1
 
-        grid_num_format = cell_values()
-        win_sums = win_sum_calc(grid_num_format)
-        game_over = check_win(win_sums)
-
-        if not game_over:
-            if count > 1:
-                count = 0
-
-            
+            output_grid()
+        
