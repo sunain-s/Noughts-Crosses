@@ -10,9 +10,14 @@ from random import randint
 # Move Input Functions
 
 def input_move():
+    '''
+    User input for move position
+    '''
+    
     move = int(input('Enter number 1-9:  '))
     move -= 1
     valid_move = check_move(move)
+    # assigns selected position with nought, after valid move check
     if valid_move:
         grid[move] = 'O'
     return valid_move
