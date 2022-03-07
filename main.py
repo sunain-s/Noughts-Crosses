@@ -23,7 +23,12 @@ def input_move():
     return valid_move
 
 def check_move(move):
+    '''
+    Checks if a move is valid
+    '''
+
     valid_move = False
+    # if position empty, valid move
     if grid[move] == ' ':
         valid_move = True
     else:
