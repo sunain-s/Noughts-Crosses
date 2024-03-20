@@ -1,21 +1,14 @@
 # Noughts-Crosses
-Noughts &amp; Crosses (Tic Tac Toe) made with Python3
+Noughts & Crosses (Tic Tac Toe) in Python
 
-# Brief
+## Contents
 
-- N&amp;C solved mathematically
-- Use maths to create AI
-- CLI game
-- GUI game
+- N&C solved mathematically
+- Use of win conditions to create computer
+- CLI game display
 
-# How to Run
+## Improvements
 
-Coming Soon!
-
-# What I Learnt
-
-Coming Soon!
-
-# Improvements
-
-Coming Soon!
+- create a GUI
+- 2 player
+- online LAN play
